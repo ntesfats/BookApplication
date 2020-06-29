@@ -1,26 +1,28 @@
 import java.text.NumberFormat;
+import java.util.ArrayList;
+import java.util.HashMap;
+
 public class Book {
     private String title, author, description;
     private double price;
-    boolean isInStock;
+    private boolean isInStock;
+    private static HashMap<String, HashMap<String, String>> dataBase;
 
     public Book(){
+    }
+
+    public Book(String title, String author, String description){
+        this();
+        this.title = title;
+        this.author = author;
+        this.description = description;
 
     }
 
     public Book(String title, String author, String description, double price, boolean isInStock){
-        this.title = title;
-        this.author = author;
-        this.description = description;
+        this(title, author, description);
         this.price = price;
         this.isInStock = isInStock;
-    }
-
-    public Book(String title, String author, String description){
-        //new Book(title, author, description, 0.0,false);
-        this.title = title;
-        this.author = author;
-        this.description = description;
     }
 
 
@@ -43,8 +45,6 @@ public class Book {
 
             System.out.println(result);
         }
-
-
     }
 
     public String getTitle() {
