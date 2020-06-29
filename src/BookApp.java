@@ -24,11 +24,14 @@ public class BookApp {
                         " government nor the authorities at Hogwarts can stop.\n As the grasp of " +
                         "darkness tightens, Harry must discover the true depth and strength of his " +
                         "friends, the importance of boundless loyalty, and the shocking price of" +
-                        " unbearable sacrifice.");
+                        " unbearable sacrifice.", 25, true);
 
-        System.out.println(book1.getDisplayText());
-        System.out.println();
-        System.out.println(book2.getDisplayText());
+        //System.out.println(book1.getDisplayText());
+       // System.out.println();
+        //System.out.println(book2.getDisplayText());
+        //System.out.println("\n");
+
+        book2.getPriceForNBook(2);
 
 
 
